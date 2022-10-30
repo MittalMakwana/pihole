@@ -1,2 +1,2 @@
 # pihole
-my pihole setup
+run install.sh to install

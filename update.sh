@@ -2,9 +2,11 @@
 sudo apt-get update && sudo apt-get upgrade -y 
 sudo rpi-update -y
 sudo apt-get autoremove -y
-sudo apt-get au
-pihole -a -t ~/pihole/backup/main.tar.gztoclean -y
 
+#backup pihole
+pihole -a -t ~/pihole/backup/main.tar.gz
+git add ~/pihole/backup/main.tar.gz
+git commit -m "new backup added $(date)"
 ## Updating pihole
 sudo pihole -up
 
