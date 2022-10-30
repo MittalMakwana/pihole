@@ -7,6 +7,7 @@ sudo apt-get autoremove -y
 pihole -a -t ~/pihole/backup/main.tar.gz
 git add ~/pihole/backup/main.tar.gz
 git commit -m "new backup added $(date)"
+git push
 ## Updating pihole
 sudo pihole -up
 
