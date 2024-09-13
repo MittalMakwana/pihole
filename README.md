@@ -12,3 +12,13 @@ https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAd
 https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-Samsung-AdBlock.txt
 https://raw.githubusercontent.com/jerryn70/GoodbyeAds/master/Extension/GoodbyeAds-YouTube-AdBlock.txt
 ```
+
+## Flush DNS cache
+### MacOS
+```
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+```
+### Google Crome
+```
+chrome://net-internals/#dns
+```
